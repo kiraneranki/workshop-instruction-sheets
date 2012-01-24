@@ -1,0 +1,119 @@
+\documentclass[11pt]{article}
+\title{Instructions to use Spoken Tutorials \\
+PHP-MySQL for Linux Users}
+\author{Shahid Farooqui}
+\date{7 September 2011}
+\topmargin -1.25in
+\textheight 10.5in
+\textwidth 6.5in
+\oddsidemargin 0in
+\evensidemargin 0in
+\usepackage{graphicx,multicol,amsmath}
+\newenvironment{enumcpt}{\begin{enumerate} \topsep 0pt \partopsep 0pt 
+                        \parsep 0pt
+                        \itemsep 0pt \leftmargin -1in \rightmargin 0pt
+                        }{\end{enumerate}}
+
+\pagestyle{empty}
+\thispagestyle{empty}
+\begin{document}
+\begin{center}
+\line(1,0){250}
+\end{center}
+\begin{center}
+\textbf {Instructions for XAMPP Installation}
+\end{center}
+\begin{multicols}{2}
+{\tt XAMPP} is an easy to install Apache distribution containing MySQL, PHP and Perl. XAMPP is really very easy to install and to use - just download, extract and start. 
+
+XAMPP is available for the following OS:
+
+{\tt XAMPP} for {\tt Linux}
+
+{\tt XAMPP} for {\tt Windows}
+
+{\tt XAMPP} for {\tt Mac OSX}
+
+{\tt XAMPP} for {\tt Solaris}
+
+\textbf {XAMPP for Linux}
+
+In the past this software was called {\tt LAMPP} but to avoid misconceptions it was renamed {\tt XAMPP} for {\tt Linux}.
+ 
+\textbf {Installation in 6 Steps-}
+\begin{enumcpt}
+\item Locate this file"
+
+Locate {\tt xampp-linux-1.7.4.tar.gz} inside the CD or the folder in your system.
+
+\item Installation:
+
+Simply type in the following commands:
+Go to a Linux shell and login as the system administrator root:
+
+  {\tt su}
+
+Extract the downloaded archive file to /opt:
+
+  {\tt tar xvfz xampp-linux-1.7.4.tar.gz -C /opt}
+
+{\tt XAMPP} is now installed below the {\tt /opt/lampp} directory. 
+
+\item Start:
+
+To start {\tt XAMPP} simply call this command:
+
+{\tt /opt/lampp/lampp start}
+
+If you get any error messages please take a look at the Linux FAQ. 
+
+\item Test:
+
+To check that everything really works, just type in the following URL in your web browser: 
+
+{\tt http://localhost}
+
+You will see {\tt http://localhost/xampp} in your web browser URL.  This shows that the Apache server is running.
+
+\item Create a directory called {\tt phpacademy} inside the 
+{\tt /opt/lampp/htdocs} folder using the command 
+
+{\tiny sudo mkdir -p /opt/lampp/htdocs/phpacademy}
+
+\item Change the access permission of the directory phpacademy in order to run the php files.  To do so, type the command 
+
+{\tiny sudo chmod 777 -R /opt/lampp/htdocs/phpacademy}
+\end{enumcpt}
+
+
+
+\textbf {Final Check-}
+\begin{enumcpt}
+\item All example code files that you create while learning should be kept in the {\tt phpacademy} folder only.
+
+\item Now go to your browser and type the URL 
+{\tt http://localhost/phpacademy/}
+
+Now you will be able to run your .php files.  
+\end{enumcpt}
+For more detailed information, please visit
+
+{\tiny http://www.apachefriends.org/en/xampp-linux.html}
+
+
+For information on how to install {\tt XAMPP} on other OS, please visit the following URLs-
+
+\emph {XAMPP for Windows}
+
+{\tiny http://www.apachefriends.org/en/xampp-windows.html}
+
+\emph {XAMPP for Mac OSX}
+
+{\tiny http://www.apachefriends.org/en/xampp-macosx.html}
+
+\emph {XAMPP for Solaris}
+
+{\tiny http://www.apachefriends.org/en/xampp-solaris.html}
+
+\end{multicols}
+\end{document}
