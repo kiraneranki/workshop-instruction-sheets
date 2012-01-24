@@ -1,0 +1,13 @@
+Linux Assignments
+
+
+Exercise based on tutorial "Synaptic Package Manager"
+
+
+
+1. Configure repository in Synaptic Package Manager and choose a download
+   server from the list available under the option "Other" of "Download from" drop-down menu. 
+
+2. Install "emacs" using the Synaptic Package Manager in Ubuntu.
+
+3. Remove "emacs" using the Synaptic Package Manager in Ubuntu.

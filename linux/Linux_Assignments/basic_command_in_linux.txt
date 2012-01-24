@@ -1,0 +1,10 @@
+Linux Assignments 
+
+
+Basic Commands in Linux
+
+
+Q1)Commands are actually files containing programs, often written in C. How will you find out in which directory does  the file corresponding to the man command resides?
+
+Q2) How will you find out what is the use of the ps command.
+

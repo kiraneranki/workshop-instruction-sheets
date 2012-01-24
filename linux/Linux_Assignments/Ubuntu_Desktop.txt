@@ -1,0 +1,6 @@
+Assignment based on tutorial "Ubuntu Desktop"
+
+Question (1) Open the text editor gedit, create a file containing your full name and save this file on desktop.
+
+Question (2) Open the calculator and multiply 101.101 with 202.202
+
