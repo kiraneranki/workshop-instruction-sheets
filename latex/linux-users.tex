@@ -1,0 +1,240 @@
+\documentclass[11pt]{article}
+\title{Instructions to use Spoken Tutorials \\
+\LaTeX\ for Linux Users}
+\author{Kannan Moudgalya}
+\date{28 July 2011}
+\topmargin -1.25in
+\textheight 10.5in
+\textwidth 6.5in
+\oddsidemargin 0in
+\evensidemargin 0in
+\usepackage{graphicx,multicol}
+\newenvironment{enumcpt}{\begin{enumerate} \topsep 0pt \partopsep 0pt 
+                        \parsep 0pt
+                        \itemsep 0pt \leftmargin -1in \rightmargin 0pt
+                        }{\end{enumerate}}
+
+\pagestyle{empty}
+\thispagestyle{empty}
+\begin{document}
+\begin{minipage}[t]{0.15\textwidth}
+\includegraphics[width=\linewidth]{3t-logo}
+\end{minipage} \hfill
+\begin{minipage}[t]{0.65\textwidth}
+\begin{center}
+\vspace{-0.7in}
+\Large
+Spoken Tutorial Based \LaTeX\ Workshop on Linux \\
+\large
+Spoken Tutorial Team \\
+IIT Bombay \\
+5 August 2011
+\end{center}
+\end{minipage} \hfill
+\begin{minipage}[t]{0.12\textwidth}
+\includegraphics[width=\linewidth]{st-logo.jpg}
+\end{minipage}
+
+
+
+\begin{multicols}{2}
+
+\section{The procedure to practise}
+\begin{enumcpt}
+\item You have been given a set of spoken tutorials and files
+\item You will typically do one tutorial at a time
+\item You may Listen to a spoken tutorial and reproduce all the
+  commands shown in the video
+\item If you find it difficult to do the above, you may consider
+  listening to \emph{whole} tutorial once and then practise during
+  the second hearing
+\end{enumcpt}
+
+\section{First tutorial: {\tt What is
+    Compilation?}}
+These detailed instructions are intended mainly for the Windows users,
+who may have to use Linux for learning \LaTeX.  The Linux users will
+know most of these things.
+\begin{enumcpt}
+\item Click {\tt Places} button at
+  the top left hand corner and then click the {\tt Home Folder}.  The
+  folder that opens is called your {\tt home} folder.
+\item Please locate the folder {\tt LaTeX\_Workshop} that is available
+  on Desktop.  The sub-folder {\tt 01-compilation} contains the
+  following files that you need for this tutorial: {\tt hello.tex} and
+  {\tt compiling.mov}.
+\item Please copy {\tt hello.tex} from this folder to your {\tt home}
+  folder. 
+\item Open the {\tt terminal} using the command {\tt Ctrl-Alt-t}, by
+  pressing all these three keys simultaneously.
+\item Open the file that you copied above into the editor using the
+  command
+\begin{quote}
+  {\tt gedit hello.tex~\&}  
+\end{quote}
+Do not forget the symbol ampersand (\&) at the end of the command,
+obtained by pressing {\tt shift 7}.  Please leave spaces exactly as
+given above.
+\item Right click on {\tt compiling.mov}, point the cursor on  {\tt Open With} and select {\tt VLC Media
+    Player}, now listen to this spoken tutorial.
+\item As shown in the video at 1:57min, compile from the terminal the
+  file {\tt hello.tex} using the command  
+\begin{quote}
+  {\tt pdflatex hello.tex}
+\end{quote}
+Note that {\tt pdflatex} is ONE command.  Please do not leave a space
+between pdf and latex.
+\item Pause the video at 2:04min.  You should now be able to give the
+  command {\tt pdflatex hello.tex} and get a file {\tt hello.pdf}.  If 
+  there is any difficulty in this step, please listen to the tutorial
+  from 1:57min to 2:04min once again.
+\item The video talks about a pdf viewer called {\tt skim} at
+  3:04min.  
+\begin{itemize}
+\item Please do not attempt to use {\tt skim} - it is NOT available on
+Linux.
+\end{itemize}
+You have to use the pdf viewer {\tt evince} instead.  Give the
+following command from the {\tt terminal} to open the pdf file:
+\begin{quote}
+  {\tt evince hello.pdf \&}
+\end{quote}
+Once again, do not forget the \& symbol in the above command.
+
+\item Observe that there are three activities in the video:
+  \begin{enumcpt}
+  \item Editing the file hello.tex
+  \item Compiling this file on the terminal
+  \item Viewing the file in a pdf viewer.
+  \end{enumcpt}
+  You have now carried out all of these three activities through {\tt
+    gedit}, {\tt terminal} and {\tt evince}, respectively.  You may
+  wish to resize and arrange these three screens so that you can
+  access all of them simultaneously.  They could be overlapping, of
+  course.  You should be able to reproduce every one of these three
+  activities, as shown in the spoken tutorial.
+\item From now on, you are supposed to do this: 
+\begin{quote}
+Listen to a command, pause the video, and try to reproduce it
+\end{quote}
+\item Please note that you will NOT have to open {\tt gedit} and {\tt
+    evince} again.  You will have to repeatedly give the {\tt
+    pdflatex} command, however, as explained above.  This is what is
+  shown in the spoken tutorial also.
+\item It is possible that some changes that you try may create
+  problems during the {\tt pdflatex} command.  If this happens, type
+  the letter {\tt x} or {\tt ctrl-d} in the terminal to come out.
+  Until you become comfortable with \LaTeX\, please try only the
+  commands shown in the spoken tutorial.
+\item After reproducing all the commands, please go to the next
+  tutorial, {\tt letter writing}.
+\end{enumcpt}
+
+\section{Procedure for letter writing}
+\begin{enumcpt}
+\item Close {\tt gedit}, {\tt evince} screens and the {\tt terminal}
+  that you used for the previous tutorial. 
+\item For this tutorial, you will need the files {\tt letter.tex} and
+  {\tt letter.mov} from {\tt 03-letter}, which is a sub-folder of {\tt
+    LaTeX\_Workshop} that is available on Desktop.
+\item For this tutorial, you will listen to {\tt letter.mov}.  Once
+  again, you have to open using VLC.  
+\item Repeat all the instructions given for {\tt What is
+    Compilation?}.  Remember to do the following:
+\begin{itemize}
+\item    Substitute {\tt hello} with {\tt letter} in every instruction.
+    For example, you shall copy the file {\tt letter.tex} into your
+    home folder, as an initial step.
+  \end{itemize}
+\item Do not attempt to create the file {\tt letter.tex} from
+  scratch.  You are likely to make mistakes.
+\end{enumcpt}
+
+\section{After letter writing, what to do?}
+After {\tt letter writing}, you will do the following tutorials, in
+this order.  For each tutorial, the name of the sub-folder, the video
+to watch and the files to copy to your home folder, are shown below:
+\begin{description}
+\item [Report writing:]
+Sub-folder name: {\tt 04-report}.
+File to be copied to the home folder: {\tt report.tex}.  Video to
+watch: {\tt report.mov}. 
+\item [Maths:]
+Sub-folder name: {\tt 05-maths}. \\
+File to copy: {\tt maths.tex}.  Video to watch: {\tt maths.mov}.
+\item [Equations:]
+Sub-folder name: {\tt 06-equations}. \\
+File to copy: {\tt equations.tex}.  Video to watch: {\tt equations.mov}.
+\begin{enumcpt}
+\item If your system has only a basic \LaTeX\ installation, you may
+  get an error message that {\tt cclicenses.sty} not found or a
+  similar warning.
+\item The above will happen if a package is not installed.  Please install the package {\tt texlive-full} using the {\tt Synaptic
+    Package Manager}.  If this also fails, only then, do an Internet
+  search, locate the missing file and download to your working folder
+  - in this case, your {\tt home} folder.  You may have to do this for
+  the file {\tt cclicenses.sty}.
+\\
+We have provided the file {\tt cclicenses.sty} in sub-folder {\tt 06-equations} for your convenience.
+\item From now on, you should follow this procedure whenever a file is
+  missing.
+\item Once you become more comfortable with \LaTeX, you will learn
+  about a central location where you can copy the missing packages.
+  Until that happens, copy the missing packages into your working
+  folder. 
+\end{enumcpt}
+\item [Tables and Figures:]
+Sub-folder name: {\tt 07-table-figure}. 
+Files to copy: {\tt tab-fig.tex}, {\tt
+  iitb.pdf} and {\tt iitblogo.pdf}.  In addition, you may need other
+files from the previous tutorials, as shown in the spoken tutorial.
+Video: {\tt tab-fig.mov}.
+\begin{itemize}
+\item In case of any warning, such as {\tt cclicenses.sty} not found,
+  please see the instructions for the tutorial {\tt equations}, given
+  above.
+\end{itemize}
+\item [Bibliography:] 
+Sub-folder name: {\tt 08-references}.  Video to watch: {\tt
+  references.mov}.  
+Files to copy: {\tt references.tex}, {\tt
+  harvard.sty}, {\tt ifac.bst} and {\tt ref.bib}.
+\item [Beamer]
+Sub-folder name: {\tt 09-beamer}. \\
+Files to be copied: {\tt beamer.tex}, {\tt
+  iitb.pdf}, {\tt iitblogo.pdf} and any other files, as mentioned in
+the spoken tutorial.  Video to watch: {\tt beamer.mov}.
+\end{description}
+\end{multicols}
+
+
+\end{document}
+\section{The software that you will need are:}
+\pagestyle{empty}
+\thispagestyle{empty}
+\begin{enumcpt}
+\item \LaTeX\ itself
+\item A pdf viewer, evince could work
+\item An editor, for example, gedit
+\item VLC player
+\end{enumcpt}
+
+
+\section{The sequence in which you will practise the tutorials}
+\begin{enumcpt}
+\item What is compilation
+\item Letter writing
+\end{enumcpt}
+
+\begin{itemize}
+\item Please reproduce all the commands shown in the spoken tutorial.
+\item Initially try only the commands shown in the spoken tutorial.
+
+\item Some {\emph new} things that you may try may or may not work.
+\item You cannot learn all of \LaTeX\ in two hours.
+\item Instead of wasting a lot of time on things that do not work,
+  please spend time in listening to things that work, i.e. after a
+  little bit of experimentation with a tutorial, please go to the next
+  tutorial.
+\item The workshop organisers may not know \LaTeX\ commands. Their role is only to conduct this workshop using spoken tutorials.
+\end{itemize}

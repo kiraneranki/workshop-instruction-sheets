@@ -1,0 +1,248 @@
+\documentclass[11pt]{article}
+\title{Instructions to use Spoken Tutorials \\
+\LaTeX\ for Linux Users}
+\author{Kannan Moudgalya}
+\date{28 July 2011}
+\topmargin -0.75in
+\textheight 9.5in
+\textwidth 6.5in
+\oddsidemargin 0in
+\evensidemargin 0in
+\usepackage{graphicx,multicol}
+\newenvironment{enumcpt}{\begin{enumerate} \topsep 0pt \partopsep 0pt 
+                        \parsep 0pt
+                        \itemsep 0pt \leftmargin -1in \rightmargin 0pt
+                        }{\end{enumerate}}
+
+\pagestyle{empty}
+\thispagestyle{empty}
+\begin{document}
+\begin{minipage}[t]{0.15\textwidth}
+\includegraphics[width=\linewidth]{3t-logo}
+\end{minipage} \hfill
+\begin{minipage}[t]{0.68\textwidth}
+\begin{center}
+\vspace{-0.7in}
+\Large
+Spoken Tutorial Based \LaTeX\ Workshop: Windows \\
+\large
+Spoken Tutorial Team \\
+IIT Bombay \\
+5 August 2011
+\end{center}
+\end{minipage} \hfill
+\begin{minipage}[t]{0.12\textwidth}
+\includegraphics[width=\linewidth]{st-logo.jpg}
+\end{minipage}
+
+
+
+\begin{multicols}{2}
+
+\section{The procedure to practise}
+\begin{enumcpt}
+\item You have been given a set of spoken tutorials and files
+\item You will typically do one tutorial at a time
+\item You may Listen to a spoken tutorial and reproduce all the
+  commands shown in the video
+\item If you find it difficult to do the above, you may consider
+  listening to \emph{whole} tutorial once and then practise during
+  the second hearing
+\end{enumcpt}
+
+\section{First tutorial: {\tt What is
+    Compilation?}}
+\begin{enumerate}
+\item Please locate the folder {\tt LaTeX\_Workshop} on the CD and
+  copy it to your Desktop, this folder contains all the tutorials,
+  please locate {\tt LaTeX-Win.wmv} in folder {\tt 02-MiKTeX}
+\item Please listen to the video {\tt LaTeX-Win.wmv} until 1:04
+  minute, when there is a mention of {\tt What is Compilation?}.
+  Pause this video at this time.
+\item Listen to the video {\tt compiling.mov} which is available in
+  folder {\tt 01-compilation} - just listen once.  Do not attempt to
+  re-do it on MiKTeX yet.
+\item Continue with {\tt LaTeX-Win.wmv} from where you left.  Follow
+  the installation procedure for MiKTeX and TeXNicCenter.  As the
+  setup files for installing MiKTeX and TeXNicCenter are already
+  available, you do not need to download them, but only install them.
+  Please install them as suggested in this video.
+\item If Adobe reader is already installed on your system, pause
+  {\tt LaTeX-Win.wmv} at 10:52min only.  You would now have MiKTeX,
+  TeXNicCenter and Adobe reader, configured as in this video.  
+\item Please locate the file {\tt hello.tex} in folder {\tt
+  01-compilation}.
+\item You may now repeat whatever the video {\tt LaTeX-Win.wmv} says
+  from 10:52min to 16:12min.
+\item If the Adobe reader is not installed on your system, you may
+  consider installing {\tt sumatra} pdf reader, as per the
+  instructions given in the video {\tt LaTeX-Win.wmv}, from 20:00min
+  till the end of this video.  Follow only the sumatra installation
+  part - the source file is given to you. You only need to
+  \emph{listen} to other instructions.  For example, do not attempt to
+  work with letter.tex or report.tex yet.
+\end{enumerate}
+
+\section{Procedure for letter writing}
+\begin{enumcpt}
+\item For this tutorial, you will need the files {\tt letter.tex} and
+  {\tt letter.mov} from {\tt 03-letter}, which is a sub-folder of {\tt
+    LaTeX\_Workshop} that is available on Desktop.
+\item For this tutorial, you will listen to {\tt letter.mov}.  Once
+  again, you have to open using VLC.  
+\item Repeat all the instructions given for {\tt What is
+    Compilation?}.  Remember to do the following:
+\begin{itemize}
+\item Substitute {\tt hello} with {\tt letter} in every instruction.
+  For example, you shall copy the file {\tt letter.tex} into your home
+  folder, as an initial step.
+  \end{itemize}
+\item Do not attempt to create the file {\tt letter.tex} from
+  scratch.  You are likely to make mistakes.
+\end{enumcpt}
+
+\section{After letter writing, what to do?}
+After {\tt letter writing}, you will do the following tutorials, in
+this order.  For each tutorial, the name of the sub-folder, the video
+to watch and the files to copy to your home folder, are shown below:
+\begin{description}
+\item [Report writing:]
+Sub-folder name: {\tt 04-report}.
+File to be copied to the home folder: {\tt report.tex}.  Video to
+watch: {\tt report.mov}. 
+\item [Maths:]
+Sub-folder name: {\tt 05-maths}. \\
+File to copy: {\tt maths.tex}.  Video to watch: {\tt maths.mov}.
+\item [Equations:]
+Sub-folder name: {\tt 06-equations}. \\
+File to copy: {\tt equations.tex}.  Video to watch: {\tt
+  equations.mov} and possibly, {\tt MiKTeX-update.wmv} in
+  folder {\tt 02-MiKTeX}.
+\begin{enumcpt}
+\item If your system has only a basic MiKTeX installation, you may
+  get an error message that {\tt cclicenses.sty} is not found or
+  something like that.
+\item The above will happen if a package is not installed.  To install
+  the missing packages, please listen to {\tt MiKTeX-update.wmv} in
+  folder {\tt 02-MiKTeX} and follow the instructions.
+  If this also fails, only then, do an Internet
+  search, locate the missing file and download to your working folder
+  - in this case, your {\tt home} folder.  You may have to do this for
+  the file {\tt cclicenses.sty}.
+\item We have provided the file {\tt cclicenses.sty} in sub-folder {\tt
+    06-equations} for your convenience.
+\item From now on, you should follow the procedure discussed in the
+  above two bulleted points whenever a package is
+  missing.
+\item Once you become more comfortable with \LaTeX, you will learn
+  about a central location where you can copy the missing packages.
+  Until that happens, copy the missing packages into your working
+  folder. 
+\end{enumcpt}
+\item [Tables and Figures:]
+Sub-folder name: {\tt 07-table-figure}. 
+Files to copy: {\tt tab-fig.tex}, {\tt
+  iitb.pdf} and {\tt iitblogo.pdf}.  In addition, you may need other
+files from the previous tutorials, as shown in the spoken tutorial.
+Video: {\tt tab-fig.mov}.
+\begin{itemize}
+\item In case of any warning, such as {\tt cclicenses.sty} not found,
+  please see the instructions for the tutorial {\tt equations}, given
+  above and install the missing packages.
+\end{itemize}
+\item [Bibliography:] 
+Sub-folder name: {\tt 08-references}.  Video to watch: {\tt
+  references.mov}.  
+Files to copy: {\tt references.tex}, {\tt
+  harvard.sty}, {\tt ifac.bst} and {\tt ref.bib}.
+\begin{itemize}
+\item In case of any warning that some package is not found,
+  please see the instructions for the tutorial {\tt equations}, given
+  above and install the missing packages.
+\end{itemize}
+\item [Beamer]
+Sub-folder name: {\tt 09-beamer}. \\
+Files to be copied: {\tt beamer.tex}, {\tt
+  iitb.pdf}, {\tt iitblogo.pdf} and any other files, as mentioned in
+the spoken tutorial.  Video to watch: {\tt beamer.mov}.
+\begin{itemize}
+\item In case of any warning, such as {\tt beamer} is not found,
+  please see the instructions for the tutorial {\tt equations}, given
+  above and install the missing packages.
+\end{itemize}
+\end{description}
+\end{multicols}
+\end{document}
+
+
+\subsection*{When to Go to the Next Tutorial?}
+\begin{itemize}
+\item You should be able to reproduce all the commands shown in the
+  video. 
+\item Some \emph{new} things that you may try may or may not work.
+\item You cannot learn all of \LaTeX\ in two hours.
+\item Instead of wasting a lot of time on things that do not work,
+  please spend time in listening to things that work, i.e. after a
+  little bit of experimentation with a tutorial, please go to the next
+  tutorial.
+\item The workshop organisers may not know \LaTeX\ commands. Their
+  role is only to conduct this workshop using spoken tutorials.
+\end{itemize}
+
+\subsection*{Procedure for other tutorials}
+\begin{enumerate}
+\item You are expected to listen to the \LaTeX\ tutorials in the following
+order:
+\begin{enumerate}
+\item LaTeX for Windows
+\item What is compilation
+\item Letter writing
+\item Report writing
+\item Maths
+\item Equations
+\item Tables and Figures
+\item Bibliography
+\item Beamer
+\end{enumerate}
+For example, if you just completed {\tt What is compilation?}, it is
+time to start working on letter writing, using the video {\tt letter.mov}.
+
+\item All the required source files have been made available to you.
+  Please copy ALL the source files used in the tutorial to your
+  Desktop and work with them.  Please do NOT create them from scratch,
+  as you may make mistakes.
+
+
+\begin{quote}
+Please do NOT create them from scratch, as you may make
+mistakes.
+\end{quote}
+
+\item Carry out all the steps explained for the {\tt What is
+    Compilation?} tutorial now also.  For example, follow all of the
+  above steps for letter writing using the file name {\tt letter.tex},
+  as opposed to {\tt hello.tex}.
+\end{enumerate}
+
+\subsection*{Installation}
+Please follow these instructions carefully, else you may waste a lot
+of time.
+\begin{itemize}
+\item We advise you to install MiKTeX on your windows systems using
+  instructions explained in the tutorial, available at {\tt
+    http://spoken-tutorial.org/LaTeX\_Windows\_English} only.
+\item In view of this, it may be better for you to un-install MiKTeX
+  and re-install from scratch using this video instructions.
+\item Suppose that you do not follow the above, but persist with your
+  earlier installation.  In case you run into any difficulty, such as,
+  file not found, etc., you must un-install MiKTeX and re-install,
+  using the instructions given above.  The workshop organisers will
+  not be able to help you fix the path problem.
+\item We are ready to help you install MiKTeX ahead of the workshop,
+  if you visit our lab in room 311, automation lab, second floor,
+  chemical engineering building.  In case you have any question, you
+  may contact Shahid at 96191 16925 or Sachin at 99204 88086.
+\end{itemize}
+
+\end{multicols}
+\end{document}
