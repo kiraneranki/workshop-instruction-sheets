@@ -5,5 +5,5 @@
 !.gitignore
 *.orig
 */*~
-*/.log
-*/.aux
+*/*.log
+*/*.aux
