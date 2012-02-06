@@ -1,0 +1,155 @@
+\documentclass[17pt]{beamer}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{epsfig}
+%\definecolor{Purple1}{RGB}{0,102,102}
+\setbeamercolor{structure}{fg=brown}
+%\definecolor{blue}{RGB}{1,51,102}
+
+\setbeamercolor{alerted text}{fg=brown}
+\usepackage{verbatim}
+\usepackage{bm}
+\usepackage{txfonts}
+\newenvironment{colorverbatim}[1][]
+{
+\color{blue}
+}
+{
+\endverbatim
+}
+\usepackage{beamerthemesplit}
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{beamerthemeshadow}
+\beamertemplateshadingbackground{blue!5}{yellow!10}
+\usepackage{beamerthemesplit}
+\logo{\includegraphics[height=1cm]{3t-logo.pdf}}
+
+\begin{document}
+\sffamily 
+\bfseries
+\title
+[ Vector Operations
+\hspace{0.5cm}
+\insertframenumber/\inserttotalframenumber]
+{\normalsize Vector Operations}
+\vspace{-1 cm}
+\author[ Script-Shalini \\ Narration-Anuradha]{{ \small Talk to a Teacher \\ National Mission on Education through ICT \\ http://spoken-tutorial.org }\\{\scriptsize Script }\\ \vspace{-0.2cm}{\small Shalini Shrivastava}\vspace{-0.3cm} \\{\scriptsize (IIT Bombay) } \vspace{-0.2cm}\\{\scriptsize Narration} \vspace{-0.2cm}\\  {\small Anuradha Amrutkar}\vspace{-0.3cm} \\{\scriptsize (IIT Bombay)}\vspace{-1 cm}}
+
+\date{ \scriptsize 19 August 2011}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Objectives}
+At the end of this spoken tutorial, you will be able to:\pause
+\begin{itemize} [<+-|alert@+>]
+\item Define a vector.
+\item Calculate length of a vector.
+\item Perform mathematical operations on vectors such as addition, subtraction and multiplication.
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Objectives}
+\begin{itemize} [<+-|alert@+>]
+\item Define a matrix.
+\item Calculate size of a matrix.
+\item Perform mathematical operations on matrices such as addition, subtraction and multiplication.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\frametitle{Prerequisites}
+\begin{itemize} [<+-|alert@+>]
+\item Scilab Installed on your machine. 
+\item Spoken Tutorial: Getting started with scilab.
+\item *Basic knowledge about Vector and Matrix.
+\item I am using Windows 7 OS and Scilab 5.2.2 for demonstration.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Exercise 1}
+\begin{itemize}
+\item Define two vectors A,B with 1,5,8,19 and 19,8,5,1 elements respectively.
+\item Calculate A'*B-B'*A
+\item Calculate A*A'+B*B'
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Exercise 2}
+In Scilab Console, enter the following\\
+Matrices:
+\textsl{A = $\left[
+               \begin{array}{cc}
+                 1 &  \frac{1}{2}   \\ \\
+                 \frac{1}{3} &  \frac{1}{4}  \\ \\
+                 \frac{1}{5} & \frac{1}{6} 
+              \end{array}
+             \right]$ }\\
+B =[ 5 −2 ],
+\textsl{C = $\left[
+               \begin{array}{ccc}
+                 4 &  \frac{5}{4}  & \frac{9}{4}   \\ \\
+                 1 & 2 & 3  
+                \end{array}
+             \right]$ }\\
+             
+\end{frame} 
+
+\begin{frame}[fragile]
+\frametitle{Exercise 2}             
+Compute each of the following and explain the errors, if any.
+\begin{itemize}
+\item $A*C-C*A$
+\item $2*C-6*A$
+\item $(2*C-6*A')*B'$
+\item $(2*C-6*A')*C'$
+\end{itemize}
+\end{frame}  
+
+
+\begin{frame}[fragile]
+\frametitle{Summary}
+In this tutorial, we have learnt to,
+\begin{itemize}
+\item Define a vector using spaces or commas.
+\item Calculate length of a vector using the length() function.
+\item Find the transpose of vector or matrix using apostrophe.
+\end{itemize}
+\end{frame}  
+
+\begin{frame}[fragile]
+\frametitle{Summary}
+\begin{itemize}
+\item Define a matrix by using space/comma to separate the columns and semicolon to separate the rows.
+\item Find size of a matrix using size() function.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Acknowledgement}
+\begin{itemize}
+\item This spoken tutorial has been created by the Free and Open Source Software in Science and Engineering Education(FOSSEE).\pause
+\item More information on the FOSSEE project could be obtained from {\color{magenta}http://fossee.in} or {\color{magenta}http://scilab.in}\pause
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Acknowledgement}
+\begin{itemize}
+\item Supported by the National Mission on Eduction through ICT, MHRD, Government of India.\pause
+\item For more information, visit: \\
+	{\color{magenta}http://spoken-tutorial.org/NMEICT-Intro}
+
+\end{itemize}
+\end{frame}
+\end{document}

@@ -1,0 +1,224 @@
+\documentclass[17pt]{beamer}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{epsfig}
+%\definecolor{Purple1}{RGB}{0,102,102}
+\setbeamercolor{structure}{fg=brown}
+%\definecolor{blue}{RGB}{1,51,102}
+
+\setbeamercolor{alerted text}{fg=brown}
+\usepackage{verbatim}
+\usepackage{bm}
+\usepackage{txfonts}
+\newenvironment{colorverbatim}[1][]
+{
+\color{blue}
+}
+{
+\endverbatim
+}
+\usepackage{beamerthemesplit}
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{beamerthemeshadow}
+\beamertemplateshadingbackground{blue!5}{yellow!10}
+\usepackage{beamerthemesplit}
+\logo{\includegraphics[height=1cm]{3t-logo.pdf}}
+
+\begin{document}
+\sffamily 
+\bfseries
+\title
+[ Matrix Operations
+\hspace{0.5cm}
+\insertframenumber/\inserttotalframenumber]
+{\normalsize Matrix Operations}
+\vspace{-1 cm}
+\author[ Script-Shalini \\ Narration-Anuradha]{{ \small Talk to a Teacher \\ National Mission on Education through ICT \\ http://spoken-tutorial.org }\\{\scriptsize Script }\\ \vspace{-0.2cm}{\small Shalini Shrivastava}\vspace{-0.3cm} \\{\scriptsize (IIT Bombay) } \vspace{-0.2cm}\\{\scriptsize Narration} \vspace{-0.2cm}\\  {\small Anuradha Amrutkar}\vspace{-0.3cm} \\{\scriptsize (IIT Bombay)}\vspace{-1 cm}}
+
+\date{ \scriptsize 19 August 2011}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Objectives }
+At the end of this spoken tutorial, you will be able to:
+\begin{itemize}
+\item Access the element of Matrix. \pause
+\item Determine the determinant, inverse and eigenvalue of a matrix.\pause
+\item Define the special matrices.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Objectives }
+\begin{itemize}
+\item Perform elementary row operations. \pause
+\item Solve the system of linear equations.
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Prerequisites}
+\begin{itemize}
+\item Scilab installed on your machine.\pause
+\item Spoken Tutorial: Getting Started with Scilab.\pause
+\item Spoken Tutorial: Vector Operations.\pause
+\item I am using Windows 7 OS and Scilab 5.2.2 for demonstration.
+\end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Exercise 1}
+If \textsl{A = $\left[
+               \begin{array}{ccc}
+                 1 & -1 & 0  \\ \\
+                 2 & 3 & 1 \\ \\
+                 4 & 1 & 5
+              \end{array}
+             \right]$ }\\
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Exercise 1}
+\begin{itemize}
+\item Find A(:,:)
+\item Extract the second column of A
+\item Determine the determinant and eigenvalues of the matrix, A^2+2*A.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Linear Systems}
+\begin{itemize}
+\item One of the important sets of operations a user carries out on matrices are elementary  row or column operations.\pause
+\item They involve executing row operations on a matrix to make entries below a non-zero number, zero.
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Linear Equations}
+Lets solve the following set of linear equations: \\
+x1 + 2x2 - x3 = 1 \\
+-2x1 - 6x2 + 4x3 = - 2 \\
+-x1 - 3x2 + 3x3 = 1 \\
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Exercise 2}
+\begin{itemize}
+\item Define a 3x3 matrix A with all elements equal to 1. \\ Multiply 1st and 2nd row with scalars, 3 and 4 respectively, and determine the determinant of the resultant matrix. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Exercise 2}
+\begin{itemize}
+\item Represent the following linear system as a matrix equation. Solve the system using the inverse method:\\
+\quad \quad x + y + 2z - w = 3 \\
+\quad \quad 2x + 5y - z - 9w = -3 \\
+\quad \quad 2x + y - z + 3w = -11 \\
+\quad \quad x - 3y + 2z + 7w = -5 \\
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Exercise 2}
+a) Try solving the above system using the backslash method.\\
+b) Verify the solution of part (a).\\
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Exercise 2}
+If \textsl{A = $\left[
+               \begin{array}{ccc}
+                 2 & 3 & 1  \\ \\
+                 4 & 6 & 5 \\ \\
+                 1 & 3 & 6
+              \end{array}
+             \right]$ }\\ \\ 
+Use a suitable sequence of row operations on A to bring A to upper triangular form.
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Summary}
+In this tutorial, we have learnt to,
+\begin{itemize}
+\item Access the element of the matrix using colon(:).
+\item Calculate the inverse of matrix using "inv" command or by black slash.\pause
+\item Calculate the determinant of a matrix using "det()" command.\pause
+\item Calculate the eigenvalues of a matrix using "spec()" command.
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}[fragile]
+\frametitle{Summary continue..}
+\begin{itemize}
+
+\item Define a matrix having all elements one, Null matrix, Identity matrix
+and a matrix with random elements by using functions ones(), zeros(), eye(), rand() respectively.\pause
+\item Solve the systems of linear equations.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Acknowledgement}
+\begin{itemize}
+\item This spoken tutorial has been created by the Free and Open Source Software in Science and Engineering Education(FOSSEE).\pause
+\item More information on the FOSSEE project could be obtained from {\color{magenta}http://fossee.in} or {\color{magenta}http://scilab.in}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Acknowledgement}
+\begin{itemize}
+\item Supported by the National Mission on Eduction through ICT, MHRD, Government of India.\pause
+\item For more information, visit: \\
+	{\color{magenta}http://spoken-tutorial.org/NMEICT-Intro}
+
+\end{itemize}
+\end{frame}
+\end{document}
+
+
+If \textsl{A = $\left[
+               \begin{array}{ccc}
+                 1 & -1 & 1  \\ \\
+                 -1 & 1 & 1 \\ \\
+                 1 & 1 & -1
+              \end{array}
+             \right]$ }\\
+\begin{itemize}
+\item Try det(A),$ A^2 , A^3$ and Eigen-
+values of A (from the previous ques-
+tion).Also multiply A by an identity matrix
+of the same size.
+\end{itemize}
+\end{frame}
+
+
+\end{document}
+

@@ -1,0 +1,224 @@
+\documentclass[17pt]{beamer}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{epsfig}
+%\definecolor{Purple1}{RGB}{0,102,102}
+\setbeamercolor{structure}{fg=brown}
+%\definecolor{blue}{RGB}{1,51,102}
+
+\setbeamercolor{alerted text}{fg=brown}
+\usepackage{verbatim}
+\usepackage{bm}
+\usepackage{txfonts}
+\newenvironment{colorverbatim}[1][]
+{
+\color{blue}
+}
+{
+\endverbatim
+}
+\usepackage{beamerthemesplit}
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{beamerthemeshadow}
+\beamertemplateshadingbackground{blue!5}{yellow!10}
+\usepackage{beamerthemesplit}
+\logo{\includegraphics[height=1cm]{3t-logo.pdf}}
+
+\begin{document}
+\sffamily 
+\bfseries
+\title
+[ Scripts and Functions
+\hspace{0.5cm}
+\insertframenumber/\inserttotalframenumber]
+{\normalsize Scripts and Functions}
+\vspace{-1 cm}
+\author[ Script \& Narration-Anuradha Amrutkar]{{ \small Talk to a Teacher \\ National Mission on Education through ICT \\ http://spoken-tutorial.org }\\{\scriptsize Script \& Narration} \vspace{-0.2cm}\\  {\small Anuradha Amrutkar}\vspace{-0.3cm} \\{\scriptsize (IIT Bombay)}\vspace{-1 cm}}
+
+\date{ \scriptsize 19 August 2011}
+
+\begin{frame}
+\maketitle
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Script Files}
+Let us start with a brief introduction to the file formats in Scilab\pause
+\begin{itemize}
+\item<+-|alert@+>  When several commands are to be executed, it may be more convenient to write these statements into a file with Scilab editor.
+\item<+-|alert@+> These are called as SCRIPT files.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Script Files}
+\begin{itemize}
+\item<+-|alert@+>  To execute the commands written in such a script file, the $"exec"$ function can be used, followed by the name of the script file.
+\item<+-|alert@+>  These file generally have the extension $".sce"$ or $".sci"$, depending on its content.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{.sci Files}
+Files having the .sci extension contains\pause
+\begin{itemize}
+\item Scilab functions and/or
+\item User defined functions
+\end{itemize}\pause
+
+\vspace{0.5cm}
+Executing these files loads the functions into Scilab environment (but does not execute them)
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{.sce Files}
+Files having the .sce extension contains\pause
+\begin{itemize}
+\item Scilab functions and
+\item User defined functions
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Remember}
+Please Remember that\pause
+\vspace{0.5cm}
+\begin{itemize}
+\item The convention of naming the extension as $.sce$ and $.sci$ are not RULES, but a convention followed by the scilab community.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Features of Scilab Script Files}
+One of the interesting feature of scilab is\pause
+\begin{itemize}
+\item<+-|alert@+> You can define any number of functions in a single .sci file
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Features of Scilab Script Files}
+\begin{itemize}
+\item<+-|alert@+> While doing this please remember that
+\begin{itemize}
+\item<+-|alert@+> By default all the variables defined in a function are LOCAL
+\item<+-|alert@+> The scope of these variables used in a particular function ends with the endfunction keyword of the function definition.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Features of Scilab Script Files}
+Advantage of this feature is\pause
+\begin{itemize}
+\item<+-|alert@+> We can use same variable names in different function.
+\item<+-|alert@+> These variables won't get mixed up unless we use the global option.
+\item<+-|alert@+> To know more about the global variables type $help$  $global$
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Features of Scilab Script Files}
+
+Please note that if any variable is to be "watched" or monitored inside a function, then $disp$ is required.\\\pause
+\vspace{0.3cm}
+Inside a function file, you can check for yourself the effect of putting a $semicolon ( ; )$ at the end of a statement\\\pause
+\vspace{0.3cm}
+ Also check this for $disp("..." )$ statements.
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Inline Functions}
+\begin{itemize}
+\item<+-|alert@+> Functions are segments of code that have well defined input and output as well as local variables
+\item<+-|alert@+> The simplest way to define a function is by using the command $`deff()'$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Inline Functions}
+\begin{itemize}
+\item<+-|alert@+> Scilab allows the creation of in-line functions and are especially useful when the body of the function is short
+\item<+-|alert@+> This can be done with the help of the function $deff()$.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Inline Functions}
+\begin{itemize}
+\item<+-|alert@+> It takes two string parameters.
+\begin{itemize}
+\item<+-|alert@+> The first string defines the interface to the function
+\item<+-|alert@+> The second string defines the statements of the function.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Inline Functions}
+\begin{itemize}
+\item<+-|alert@+> The deff command defines the function in the scilab and also loads it.
+\item<+-|alert@+> There is no need to load the function defined by using deff command explicitly through execute menu option.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{.sce Files}
+The files with the .sce file extension are the script files
+\begin{itemize}
+\item<+-|alert@+> They contain the SCILAB commands that you enter during an interactive kind of SCILAB session
+\item<+-|alert@+> They can comprise comment lines utilized in documenting the function
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{.sce Files}
+\begin{itemize}
+\item<+-|alert@+> They can also use the command EXEC to execute the script.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{.sci Files}
+\begin{itemize}
+\item<+-|alert@+> The files with the .sci file extension are the function files that start with the function statement.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{.sce Files}
+\begin{itemize}
+\item<+-|alert@+> A single .sci file can have multiple function definitions which
+\begin{itemize}
+\item<+-|alert@+> Themselves contain any number of SCILAB statements that perform operations on the function arguments or
+\item<+-|alert@+> On the output variables after they have been evaluated.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+% acknowledgement
+
+\begin{frame}[fragile]
+\frametitle{Acknowledgement}
+\begin{itemize}
+\item This spoken tutorial has been created by the Free and Open Source Software in Science and Engineering Education(FOSSEE).\pause
+\item More information on the FOSSEE project could be obtained from {\color{magenta}http://fossee.in} or {\color{magenta}http://scilab.in}\pause
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Acknowledgement}
+\begin{itemize}
+\item Supported by the National Mission on Eduction through ICT, MHRD, Government of India.\pause
+\item For more information, visit: \\
+	{\color{magenta}http://spoken-tutorial.org/NMEICT-Intro}
+
+\end{itemize}
+\end{frame}
+\end{document} 
+

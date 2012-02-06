@@ -1,0 +1,286 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{multicol,color}
+\usepackage{amsmath,amssymb}
+
+\usepackage{latexsym,soul} % for highlighting \hl{to-be-highlighted} is the command
+% uncomment next line if problem
+% \newcommand{\hl}[1]{#1}
+\renewcommand{\hl}[1]{#1}
+
+\renewcommand{\baselinestretch}{0.95}
+
+\pagestyle{empty}
+\topmargin -0.75in
+\textheight 10.5in
+\textwidth 7in
+\oddsidemargin -0.35in
+\evensidemargin 0in
+\newenvironment{enumcpt}{\begin{enumerate} \topsep -3mm \partopsep -3mm 
+                        \parsep -3mm
+                        \itemsep -0mm \leftmargin -1in \rightmargin -3mm
+                        }{\end{enumerate}}
+\begin{document}
+\begin{center}
+%Title part:
+{\Large Workshop: Introduction to Scilab}
+\\
+%\vspace{5pt}
+%{\large College: Vivekanand Education Society's Institute of Technology}
+ %\\
+ \vspace{5pt}
+{\large Funded by the National Mission on Education through ICT}
+\\
+Indian Institute of Technology Bombay, 
+26 January, 2011\\ 
+Organised by FOSSEE Group, IIT Bombay, http://scilab.in
+\AtEndDocument{\typeout{~~Warning! Warning! DATE change, and PLACE change}}
+\\
+\rule{\linewidth}{1pt}
+(The sequence of spoken tutorials to be listened/followed is same as that of exercise sets below.)
+\end{center}
+\begin{multicols}{2}
+\begin{enumcpt}
+\item {\bf Getting Started }\\Solve the following examples on the Scilab Console \underline {as soon as} the relevant topic is explained in the tutorial.
+	\begin{enumcpt}
+	\item Perform the following calculations on the scilab command line:
+\[
+\mbox{phi } = \frac{\sqrt{5}+1}{2} \qquad \qquad \mbox{ psi} = \frac{\sqrt{5}-1}{2}
+\]
+\\Find 1/phi and 1/psi.
+%\begin{enumerate}
+
+%\end{enumerate} 
+\item Verify Euler's identity: Is $e^{\pi i}+ 1$ close to zero?\\
+%Compare with $\cos(\pi) + i\cdot \sin(\pi) + 1 $.
+\item $\sqrt[4]{256}$
+\item $256^{0.25}$
+\item $e^{i\pi}$
+\item tan(45)
+\item $tan^{-1}$(1)
+\end{enumcpt}
+
+\item {\bf Vector Operations}\\Solve the following examples on the Scilab Console \underline {as soon as} the relevant topic is explained in the tutorial.
+\begin{enumcpt}
+\item Define two vectors A,B with 1,5,8,19 and 19,8,5,1 elements respectively.\\
+Calculate A’*B-B’*A\\
+Calculate A*A’+B*B’
+
+%\item {\bf Matrix Operations}\\Solve the following examples on the Scilab Console \underline {as soon as} the relevant topic is explained in the tutorial.
+%\begin{enumcpt}
+\item In Scilab, enter the following Matrices: 
+\begin{align*}
+A&=\begin{bmatrix}
+1 & 1/2\\
+1/3 & 1/4\\
+1/5 & 1/6
+\end{bmatrix} \\
+B& =\begin{bmatrix}
+5 & 2\\
+\end{bmatrix},
+\quad
+C=\begin{bmatrix}
+4 & 5/4 & 9/4\\
+1 & 2 & 3\\
+\end{bmatrix}
+\end{align*}
+Using Scilab commands, compute each of the following, \underline{if possible} and explain the errors, if any.
+%\begin{enumcpt}
+%\begin{multicols}{2}
+\item $A*C −C*A$
+\item $2*C-6*A$
+\item $(2*C - 6*A')*B'$
+\item $(2*C - 6*A')*C'$
+
+%\end{multicols}
+\end{enumcpt} 
+
+\item {\bf Matrix Operations}\\Solve the following examples on the Scilab Console \underline {as soon as} the relevant topic is explained in the tutorial.
+\begin{enumcpt}
+%\item From the video:
+%	\begin{enumcpt}
+%		\item Find E(:, :)
+%		\item Extract the second column of E
+%		\item Display just the first and last
+%    \hl{columns\footnote{\hl{Tip: from a given matrix $E$, desired columns 
+%    can be specified by defining}
+%    a \underline{vector} $v$ consisting of just the desired
+%     column \underline{indices} and using $E(:,v)$. Similarly for rows
+ %    also.} of E.}
+%	\end{enumcpt}
+\item If A = 
+$\begin{bmatrix}
+1 & -1 & 0\\
+2 & 3 & 1\\
+4 & 1 & 5\\
+\end{bmatrix}$
+\\
+Find $A(:,:)$\\
+Extract the second column of $A$
+\item Determine the determinant and eigenvalues of the matrix, $A^2+2*A$ .
+\item Define a 3x3 matrix $A$ with all elements equal to 1. Multiply 1st and 2nd row with scalars, 3 and 4 respectively, and determine the determinant of the resultant matrix.
+\item Represent the following linear system as a matrix equation. Solve the system using the inverse method:
+\begin{align*}
+x+y+2z-w &= 3\\
+2x+5y-z-9w &= -3\\
+2x+y-z+3w &= -11\\
+x-3y+2z+7w &= -5
+\end{align*}
+\item Try solving the above system using the backslash method. 
+\item Verify the solution from the previous question. 
+\item If A = 
+$\begin{bmatrix}
+2 & 3 & 1\\
+4 & 6 & 5\\
+1 & 3 & 6\\
+\end{bmatrix}$
+\\
+Use a suitable sequence of row operations on $A$ to bring 
+$A$ to upper triangular form.\footnote{Upper triangular matrix: all elements
+\underline{below} the North-West to South-East diagonal of the matrix are zero.}  
+
+\end{enumcpt}
+
+
+\item {\bf Scripts and Functions}\\Solve the following examples on the Scilab Console \underline {as soon as} the relevant topic is explained in the tutorial.
+\begin{enumcpt}
+
+	%\begin{enumcpt}
+	\item Create a scilab script file to display time on console window. (hint: clock())
+	\item Create a scilab script file to display product of a matrix A and inverse of A. $A =[1, 1;1, -1]$
+	%\end{enumcpt}
+
+	%\begin{enumcpt}
+	\item Create a function file to calculate sum and difference of any two numbers. The output should be the sum and the difference of numbers.
+	%\item Create a function to convert centimeters to millimeters and centimeters to inches. 
+	\item Create a function file to calculate the rowwise and columnwise mean and standard deviation of a user defined matrix. Display the matrix, its mean and standard deviation in output. (hint; mean(), stdev() )
+	%\end{enumcpt}
+
+	%\begin{enumcpt}
+	\item Create an inline function to sort the elements of a random vector in descending order. (hint: gsort())
+	\item Create an inline function to round off the elements of
+    a vector [1.9, 2.3, -1.1, 50.5] to the nearest integer. (hint: round())
+	%\end{enumcpt}
+\item Create a function file to calculate LU factorization of a matrix. (hint: lu()).
+	% \begin{enumcpt}
+	% 	\end{enumcpt}
+	\end{enumcpt}
+
+
+\item {\bf Plotting}
+\begin{enumcpt}
+\item 01:12: Create a linearly spaced vector from 0 to 1 with 10 points
+\item 01:12: Also create a linearly spaced vector from 0 to 1 with 11 points
+\item 01:35: plot sin(x) versus x.
+\item 02:50: Use plot2d and try changing the color to red. Also try style = -1
+\item 03:53: Put a title: ``Sine", and labels, `x axis' and `y axis'
+\item 05:50: Plot sin(x) and cos(x) on the same window. 
+\item 06:08: Create a legend for the above plots.
+\item 09:25: Now plot sin(x) and cos(x) as subplots within the same window.
+\item 10:10: Save your plot as a file.
+% \item Create a function file to evaluate and plot following function for x(x varies from -1 to 1 with step size of 0.1).
+% 	\begin{align*}
+% 	 f(x) & = x^2-\sin(x),    \qquad {x\leqslant 0} \\
+ %     x(x) & = \cos(x),        \qquad {x>0}
+%    \end{align*}
+  %  (hint :  if else)
+
+\end{enumcpt}
+
+\item {\bf Conditional Branching}\\
+Note the importance of `end' at the end of the `if-then-else-end' construct. 
+\begin{enumcpt}
+\item  Write a code to check if a given number $n$ is less than or
+equal to 10, if yes, display its square.(for $n= 4, 13$ and 10)
+ 
+\item  Write a code to check if a number is less than 10, if yes, then
+display `$>10$', if it is greater than 10,
+then display `$> 10$', else display the number. (for $n= 4, 13$ and 10)
+%  
+% \item 2:26: Write the previous code in one line.
+%  
+% \item 3:09: Write a code using select case conditional construct to
+% check whether a given number  is a multiple of 10 (take 5 values/multiples),
+% and if so, display the number.
+% \item Create a function file to that takes two matrices A and B as input. Calculate their trace.
+% 		\begin{enumcpt} \itemsep 2.5mm
+% 		\item If trace of A is greater than trace of B, then display 1.
+% 		\item If trace of B is greater than trace of A, then display -1.
+% 		\item If both traces are equal, then display 0.
+% 		\end{enumcpt}
+% 
+\end{enumcpt}
+\item {\bf Iteration}
+\begin{enumcpt}
+% \item 0:42: Create a vector  starting from 1 to 10
+% \item 1:02: Create a vector from 2 to 20 with an increment of 3
+\item  Write a for loop to display all the even numbers between 1 to 50
+% \item 2:55:  Write a code that takes as input a vector
+%     $x$=1:10,  displays the values of $x$ one by one
+%     and comes out of loop when the value of $x$ is 8.
+% \item 3:31: Write a code that takes an input vector x=1:2:10 and displays only last two values of the vector.
+%  
+\item  Find summation of vector x = [1 2 6 4 2], using iterative
+procedure. {Hint: Check length(), add each number using `for' loop.}
+\item  Write a code using while loop to display odd numbers in
+the range 1 to 25.
+% \item 5:40: Write a code using while to which take input from 0 to 15 in increments of 1 and display number 10 and 15
+\end{enumcpt}
+
+\item {\bf Polynomials}
+\begin{enumcpt}
+
+\item Construct a polynomial with 3 repeated roots at 4 and 2 repeated
+roots at 0.
+Check the roots of the derivative of this polynomial. (Use derivat)
+
+\item  Write a function that takes a polynomial and
+  gives out only real roots as output.\\
+  (hint isreal )
+
+\item  Write a function that takes a polynomial and gives the
+    INVERSE polynomial, i.e. all roots are inverses of each other.\\
+    (Hint: Coefficients are to just be reversed.)\\
+    (Check that no root was at zero: check this within the function, and
+    display error, and exit.)
+
+\item  Write a function that takes a polynomial and gives
+    all the maxima/minima candidates.\\ (Hint: find all real roots of
+    the derivative).
+
+\end{enumcpt}
+
+
+\item {\bf Ordinary Differential Equations}
+
+Solve the follwoing differential equations using Scilab and plot the dependent variable vs independent variable
+\begin{enumcpt}
+\item  $ dy/dx + y/x = -x^3; (x>0)$
+\item  $ cos(x)dy/dx + sin(x)y = x^2; y(0) = 4$
+\item  $dy/dx = (-x^3-y)/x; (y(1)=0)$
+\item  $dy/dx+y = 2x+5; (y(1)= 1)$
+\item  $dy/dx+y = x^4; (y(0)=0)$
+\item  $dy/dt + (t-1)y = 0; (y(4)=5)$
+\item  $dy/dt +2ty = t; (y(2)=4)$
+\item  $dy/dx+2xy=10xe^{-x^2}; (y(0)=1)$
+\item  $2x^2dy/dx-yx = 3; (y(1)=0)$
+\end{enumcpt}
+
+
+
+%\item {\bf Control Systems}
+%\begin{enumcpt}
+%\item Find the step response of the sytem described by the transfer function:
+ %           \[\frac{1}{s^2 + 2s + 9}\]
+        
+ %   \item Define a system whose open loop transfer function has roots at -1, -2 and -3. From the root locus of this system, find the value of gain K for which the system becomes unstable in the closed loop.
+
+
+%\end{enumcpt}
+
+
+\end{enumcpt}
+
+% \clearpage
+\end{multicols}
+\end{document}
+
